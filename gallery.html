@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | DetailsByDivine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="navbar-container"></div>
+
+<section class="gallery-section">
+
+    <h1>Our Work</h1>
+
+    <!-- ===== CAR 1 ===== -->
+    <div class="car-container">
+
+        <!-- IMAGE SLIDER -->
+        <div class="slider">
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+
+            <div class="slides">
+                <img src="images/unnamed.jpg" class="slide active">
+                <img src="images/IMG_1314.jpeg" class="slide">
+                <img src="images/IMG_1316.jpeg" class="slide">
+                <img src="images/IMG_1663.jpeg" class="slide">
+                <img src="images/IMG_1664.jpeg" class="slide">
+                <img src="images/IMG_1665.jpeg" class="slide">
+                <img src="images/IMG_1666.jpeg" class="slide">
+            </div>
+
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+
+        <!-- TEXT INFO -->
+        <div class="car-info">
+            <h2>2018 Toyota Highlander</h2>
+            <p><strong>Service:</strong> Full Interior Detail</p>
+            <p>
+                Interior Vaccum & Spray/Wipe Down.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="gallery.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,607 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 15px 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    height: 100vh;
+    padding: 40px;
+}
+
+.logo {
+    height: 70px;
+
+}
+
+.about-page {
+    background-image: url("images/about-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.about-text {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.about-text h1 {
+    text-align: center;
+}
+
+/* SERVICES PAGE LIST */
+.services-page {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.services-page .page-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.services-list li a {
+    display: block;
+    padding: 20px 40px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    text-align: center;
+}
+
+.services-list li a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropbtn-main {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.dropbtn-toggle {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;       /* hidden by default */
+    position: absolute;
+    top: 100%;           /* just below parent menu */
+    left: 0;
+    background-color: #fff;  /* white background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 180px;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: #000;
+}
+
+/* ---------- HERO SECTION ---------- */
+#home {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* ---------- SERVICES PAGE ---------- */
+.services-page {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.services-page .page-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.services-list li a {
+    display: block;
+    padding: 20px 40px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    text-align: center;
+}
+
+.services-list li a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ---------- ABOUT PAGE ---------- */
+.about-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-logo img {
+    width: 250px;
+    opacity: 0.15; /* transparent effect */
+}
+
+/* SERVICE PAGES */
+.service-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.service-page h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.service-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* responsive */
+}
+
+.service-image img {
+    width: 500px; /* adjust later for your actual image */
+    border-radius: 10px;
+}
+
+.service-text {
+    max-width: 600px;
+}
+
+.service-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.service-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-text ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ---------- CONTACT SECTION ---------- */
+#contact {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Center the contact info */
+.contact-details {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.contact-details a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons Centered */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------- STICKY NAVBAR ---------- */
+.navbar-header {
+    position: sticky;       /* makes it stay at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;          /* above everything */
+    background-color: #ffffff; /* white background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.navbar .logo {
+    height: 60px; /* adjust as needed */
+}
+
+/* Nav links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff; /* black text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 180px;
+    z-index: 1001; /* above navbar */
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Dropdown toggle on click */
+.dropbtn-toggle {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Socials inside navbar if needed */
+.navbar .socials {
+    display: flex;
+    gap: 15px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fix for sections being hidden behind sticky navbar */
+section {
+    scroll-margin-top: 80px; /* adjust to navbar height */
+}
+
+/* ---------- HOME SECTION BACKGROUND ---------- */
+#home {
+    position: relative;           /* needed for pseudo-element */
+    text-align: center;
+    padding: 150px 20px;          /* adjust spacing */
+    color: #000;                  /* text color */
+    overflow: hidden;
+}
+
+/* Background image with 70% opacity */
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/home-background.avif'); /* path to your file */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;                  /* 70% opacity */
+    z-index: -1;                   /* behind content */
+}
+
+/* ---------- BOOKING PAGE ---------- */
+
+.booking-page {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.booking-page h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.booking-page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Form wrapper */
+.form-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.home-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+
+.secondary-btn {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.secondary-btn:hover {
+    background-color: #e6b800;
+}
+
+.gallery-section {
+    padding: 60px 10%;
+}
+
+.car-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.slider {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+}
+
+.slides {
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: -15px; }
+.next { right: -15px; }
+
+.car-info {
+    max-width: 400px;
+}
+
+.car-info h2 {
+    margin-bottom: 10px;
+}
